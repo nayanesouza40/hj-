@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    box-sizing: border-box;
+}
+
+:root {
+    --roxo: #A18AFF;
+    --lilas: #CA8BFE;
+    --cinza-escuro: #717082;
+    --cinza-claro: #D9D9D9;
+    --branco: #F9F8FD;
+    --amarelo: #FAC608;
+    --rosa: #FD99AF;
+    --azul: #3FD4F4;
+}
+
+body {
+    color: var(--cinza-escuro);
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    .col-1 {width: 100%;}
+    .col-2 {width: 60%;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) { 
+    .col-1 {width: 80%;}
+    .col-2 {width: 50%;}
+}
+
+@media only screen and (min-width: 1024px) {
+    .col-1 {width:60%;}
+    .col-2 {width:40%;}
+}
+
+.col-1 {padding: 1rem;margin:0 auto;}
+.col-2 {margin: 0 auto;}
+
+.post {
+    margin-top:2rem;
+}
+
+.figure-caption {
+    margin-top: -1.2rem;
+}
+
+.figure-caption > p {
+    display: inline;
+    background-color: #fff;
+    padding: .3rem .8rem;
+    border-radius: 1rem;
+    max-width: 80%;
+    font-size: .7rem;
+}
+
+.h2-index {
+    margin-bottom: 1rem;
+}
+
+.btn, .btn-primary, .btn-sm {
+    font-size: .8rem;
+    background-color: #FD99AF;
+    border: #FD99AF;
+}
+
+.footer {
+    position: absolute;
+    bottom: .5rem;
+    font-size: .8rem;
+    width: 100%;
+    text-align: center;
+}
